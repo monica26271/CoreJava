@@ -1,0 +1,30 @@
+package com.kn.Buffer;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BufferReaderUsingFileReader {
+
+	public static void main(String[] args) {
+		String path1="c://io//input.txt";
+		String path2="c://io//output.txt";
+		try {
+			FileReader fr=new FileReader(path1);
+			FileWriter fw=new FileWriter(path2);
+			
+			BufferedReader br=new BufferedReader(fr);
+			BufferedWriter bw=new BufferedWriter(fw);
+		int x;
+		while((x=fr.read())!=-1) {
+			fw.write(x);
+		}
+		fw.flush();
+		fr.close();
+		fw.close();
+		}catch(Exception e){
+		e.printStackTrace();
+		}
+	}
+}

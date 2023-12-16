@@ -1,0 +1,28 @@
+//Reading data from the Input file and printing into the console
+
+package com.kn.input;
+
+import java.io.FileReader;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+
+		String path="c://io//input";
+		try {
+			FileReader fr=new FileReader(path);
+			
+			int x;
+			while((x=fr.read())!=-1) {
+				System.out.print(x+" ");
+			}
+			
+			
+			
+		} catch (Exception e) {
+			
+		} 
+		
+	}
+
+}

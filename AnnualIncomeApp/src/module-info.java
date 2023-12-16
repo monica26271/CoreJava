@@ -1,0 +1,2 @@
+module AnnualIncomeApp {
+}

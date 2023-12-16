@@ -1,0 +1,26 @@
+package com.kn.input;
+
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class Demo {
+	public static void main(String[] args) {
+		String path2="c://io//output.txt";
+		Scanner scan=new Scanner(System.in);
+	try {
+		FileWriter fw=new FileWriter(path2);
+		
+		int x;
+		while((x=scan.nextInt())!=-1) {
+			fw.write(x);
+		}
+		fw.flush();
+		
+		fw.close();
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+	}
+		 
+}
+	

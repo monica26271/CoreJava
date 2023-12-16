@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Squareroot {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=scan.nextInt();
+		findSquareRoot(num);
+		
+		scan.close();
+
+	}
+
+	 static void findSquareRoot(int num) {
+		System.out.println(Math.sqrt(num));
+	}
+
+}
